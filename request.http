@@ -3,6 +3,13 @@ GET http://localhost:3000/report/income
 GET http://localhost:3000/report/income/uuid1
 ###
 POST http://localhost:3000/report/income
+content-type: application/json
+
+{
+  "source": "Udemy",
+  "amount": 3000
+}
+
 ###
 PUT http://localhost:3000/report/income/uuid1
 ###
@@ -15,6 +22,13 @@ GET http://localhost:3000/report/expense
 GET http://localhost:3000/report/expense/uuid3
 ###
 POST http://localhost:3000/report/expense
+content-type: application/json
+
+{
+  "source": "Udemy",
+  "amount": 3000
+}
+
 ###
 PUT http://localhost:3000/report/expense/uuid1
 ###
