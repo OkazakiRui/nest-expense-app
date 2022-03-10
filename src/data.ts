@@ -38,7 +38,7 @@ export const data: Data = {
       amount: 3200,
       created_at: new Date(),
       updated_at: new Date(),
-      type: ReportType.INCOME,
+      type: ReportType.EXPENSE,
     },
   ],
 };

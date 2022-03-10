@@ -1,21 +1,21 @@
 GET http://localhost:3000/report/income
 ###
-GET http://localhost:3000/report/income/1
+GET http://localhost:3000/report/income/uuid1
 ###
 POST http://localhost:3000/report/income
 ###
-PUT http://localhost:3000/report/income/1
+PUT http://localhost:3000/report/income/uuid1
 ###
-DELETE http://localhost:3000/report/income/1
+DELETE http://localhost:3000/report/income/uuid1
 
 ###
 
 GET http://localhost:3000/report/expense
 ###
-GET http://localhost:3000/report/expense/1
+GET http://localhost:3000/report/expense/uuid3
 ###
 POST http://localhost:3000/report/expense
 ###
-PUT http://localhost:3000/report/expense/1
+PUT http://localhost:3000/report/expense/uuid1
 ###
-DELETE http://localhost:3000/report/expense/1
+DELETE http://localhost:3000/report/expense/uuid1
