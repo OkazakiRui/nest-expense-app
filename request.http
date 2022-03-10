@@ -1,0 +1,10 @@
+
+GET http://localhost:3000/report/income
+###
+GET http://localhost:3000/report/income/1
+###
+POST http://localhost:3000/report/income
+###
+PUT http://localhost:3000/report/income/1
+###
+DELETE http://localhost:3000/report/income/1
