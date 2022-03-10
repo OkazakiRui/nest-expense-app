@@ -51,8 +51,32 @@ export class AppController {
   }
 
   @Put(':id')
-  updateReport() {
-    return [];
+  updateReport(
+    @Param('type') type: 'income' | 'expense',
+    @Param('id') uuid: string,
+    @Body() { source, amount }: { source: string; amount: number },
+  ) {
+    const reportType =
+      type === 'income' ? ReportType.INCOME : ReportType.EXPENSE;
+    const prefReport = data.report
+      .filter(({ type }) => type === reportType)
+      .find(({ id }) => id === uuid);
+
+    if (prefReport === null) return;
+
+    const reportIndex = data.report.findIndex(({ id }) => id === prefReport.id);
+
+    const newReport = {
+      source,
+      amount,
+      updated_at: new Date(),
+      id: prefReport.id,
+      type: prefReport.type,
+      created_at: prefReport.created_at,
+    };
+    data.report[reportIndex] = newReport;
+
+    return newReport;
   }
 
   @Delete(':id')

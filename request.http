@@ -31,5 +31,12 @@ content-type: application/json
 
 ###
 PUT http://localhost:3000/report/expense/uuid1
+content-type: application/json
+
+{
+  "source": "Twitter",
+  "amount": 9000
+}
+
 ###
 DELETE http://localhost:3000/report/expense/uuid1
