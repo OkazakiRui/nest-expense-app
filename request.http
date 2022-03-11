@@ -1,6 +1,6 @@
 GET http://localhost:3000/report/income
 ###
-GET http://localhost:3000/report/income/uuid1
+GET http://localhost:3000/report/income/c7134544-2672-4c0e-b217-b6523b4f83b2
 ###
 POST http://localhost:3000/report/income
 content-type: application/json
@@ -11,7 +11,14 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3000/report/income/uuid1
+PUT http://localhost:3000/report/income/c72ce6dd-4eab-4fb0-9214-9eabc2c50089
+content-type: application/json
+
+{
+  "source": "Youtube",
+  "amount": 3000
+}
+
 ###
 DELETE http://localhost:3000/report/income/uuid1
 
