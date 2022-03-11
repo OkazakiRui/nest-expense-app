@@ -5,9 +5,13 @@
 /report/income
 
 GET 全件
+
 GET /:id 1件
+
 POST 登録 { "source": "Youtube", "amount": 3000 }
+
 PUT /:id アップデート { "source": "Youtube", "amount": 3000 }
+
 DELETE /:id
 
 ### 出費
@@ -15,9 +19,13 @@ DELETE /:id
 /report/expense
 
 GET 全件
+
 GET /:id 1件
+
 POST 登録 { "source": "Youtube", "amount": 3000 }
+
 PUT /:id アップデート { "source": "Youtube", "amount": 3000 }
+
 DELETE /:id
 
 ### 合計
