@@ -16,7 +16,7 @@ type UpdateReportData = {
 
 @Injectable()
 export class ReportService {
-  getAllIncomeReports(reportType: ReportType): ReportResponseDto[] {
+  getAllReports(reportType: ReportType): ReportResponseDto[] {
     return data.report
       .filter(({ type }) => type === reportType)
       .map((report) => new ReportResponseDto(report));

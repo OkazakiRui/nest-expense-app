@@ -28,7 +28,7 @@ export class ReportController {
   ): ReportResponseDto[] {
     const reportType =
       type === 'income' ? ReportType.INCOME : ReportType.EXPENSE;
-    return this.reportService.getAllIncomeReports(reportType);
+    return this.reportService.getAllReports(reportType);
   }
 
   @Get(':id')
